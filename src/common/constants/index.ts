@@ -1,0 +1,5 @@
+export enum TIPOS_PRODUTOS {
+  FRUTA,
+  LEGUME,
+  VERDURA
+}

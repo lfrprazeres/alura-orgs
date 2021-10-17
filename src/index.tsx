@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Home from 'pages/Home';
 
 ReactDOM.render(
   <React.StrictMode>
-    Hello World
+    <Home />
   </React.StrictMode>,
   document.getElementById('root')
 );

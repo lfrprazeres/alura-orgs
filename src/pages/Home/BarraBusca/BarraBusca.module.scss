@@ -1,0 +1,20 @@
+.barra-busca {
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  gap: 18px;
+  height: 42px;
+  justify-content: space-between;
+  padding: 0 15px;
+  width: 100%;
+  input {
+    border: none;
+    flex: 1;
+    font-size: 18px;
+    outline: none;
+    &::placeholder {
+      color: #C7C7C7;
+    }
+  }
+}
