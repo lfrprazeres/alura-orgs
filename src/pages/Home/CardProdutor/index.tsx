@@ -27,14 +27,15 @@ export default function CardProdutor(
         <img src={foto} alt={label} />
       </div>
       <div className={styles.card__descricao}>
-       <div>
-        {label}
-        <Avaliacao
-          avaliacao={avaliacao}
-          mudarAvaliacao={mudarAvaliacao}
-          idProdutor={id}
-        />
-       </div>
+        <div>
+          {label}
+          <Avaliacao
+            avaliacao={avaliacao}
+            mudarAvaliacao={mudarAvaliacao}
+            idProdutor={id}
+          />
+        </div>
+        Distância: {distancia / 1000} km
       </div>
     </div>
   )

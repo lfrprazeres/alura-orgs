@@ -1,20 +1,21 @@
-import { useState } from "react"
+import { Produtor } from "types/produtor"
 import CardProdutor from "../CardProdutor"
-import listaDeProdutores from "./utils/lista"
 
-export default function ListaProdutores() {
-  const [produtores, setProdutores] = useState(listaDeProdutores)
+interface Props {
+  listaProdutores: Produtor[],
+  setListaProdutores: React.Dispatch<React.SetStateAction<Produtor[]>>
+}
 
+export default function ListaProdutores({ listaProdutores, setListaProdutores }: Props) {
   function mudarAvaliacao(idProdutor: string, novaAvaliacao: number) {
-    setProdutores(listaProdutores => listaProdutores.map(produtorAtual => {
-      console.log(`produtor ${produtorAtual.label} tem o id ${produtorAtual.id}`)
+    setListaProdutores(listaProdutores => listaProdutores.map(produtorAtual => {
       if(produtorAtual.id === idProdutor) produtorAtual.avaliacao = novaAvaliacao
       return produtorAtual;
     }))
   }
   return (
     <>
-      {produtores.map((produtor, index) => 
+      {listaProdutores.map((produtor, index) => 
         <CardProdutor mudarAvaliacao={mudarAvaliacao} key={index} {...produtor} />  
       )}
     </>
