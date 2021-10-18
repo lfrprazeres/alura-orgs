@@ -5,7 +5,7 @@ interface Props {
   foto: string;
   avaliacao: number;
   distancia: number;
-  label: string,
+  nome: string,
   id: string,
   mudarAvaliacao: (idProdutor: string, novaAvaliacao: number) => void
 }
@@ -15,7 +15,7 @@ export default function CardProdutor(
     foto,
     avaliacao,
     distancia,
-    label,
+    nome,
     id,
     mudarAvaliacao
   }: Props
@@ -24,11 +24,11 @@ export default function CardProdutor(
   return (
     <div className={styles.card}>
       <div className={styles.card__imagem}>
-        <img src={foto} alt={label} />
+        <img src={foto} alt={nome} />
       </div>
       <div className={styles.card__descricao}>
         <div>
-          {label}
+          {nome}
           <Avaliacao
             avaliacao={avaliacao}
             mudarAvaliacao={mudarAvaliacao}

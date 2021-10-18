@@ -1,0 +1,9 @@
+.filtros {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  &__filtro {
+    padding: 20px;
+  }
+}

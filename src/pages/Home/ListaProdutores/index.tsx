@@ -1,5 +1,5 @@
 import { Produtor } from "types/produtor"
-import CardProdutor from "../CardProdutor"
+import CardProdutor from "./CardProdutor"
 
 interface Props {
   listaProdutores: Produtor[],

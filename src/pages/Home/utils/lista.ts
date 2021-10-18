@@ -4,36 +4,37 @@ import Potager from 'assets/img/produtores/potager.png'
 import Leaves from 'assets/img/produtores/leaves.png'
 import Grow from 'assets/img/produtores/grow.png'
 import { v4 as uuidv4 } from 'uuid';
+import { Produtor } from 'types/produtor';
 
-const listaDeProdutores = [{
+const listaDeProdutores: Produtor[] = [{
   foto: JennyJack,
   avaliacao: 1,
-  distancia: 500,
-  label: 'Jenny Jack Farm',
+  distancia: 5000,
+  nome: 'Jenny Jack Farm',
   id: uuidv4()
 },{
   foto: SaladPot,
   avaliacao: 0,
-  distancia: 500,
-  label: 'Salad Pot LTDA',
+  distancia: 400,
+  nome: 'Salad Pot LTDA',
   id: uuidv4()
 },{
   foto: Potager,
   avaliacao: 0,
-  distancia: 500,
-  label: 'Potager De La Rocade',
+  distancia: 100,
+  nome: 'Potager De La Rocade',
   id: uuidv4()
 },{
   foto: Leaves,
   avaliacao: 0,
-  distancia: 500,
-  label: 'Leaves S.A',
+  distancia: 1500,
+  nome: 'Leaves S.A',
   id: uuidv4()
 },{
   foto: Grow,
   avaliacao: 0,
-  distancia: 500,
-  label: 'Grow.',
+  distancia: 900,
+  nome: 'Grow.',
   id: uuidv4()
 }]
 
