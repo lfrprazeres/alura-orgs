@@ -1,12 +1,13 @@
 .home {
   align-items: center;
-  background-color: #ECECEC;
+  background-color: #ececec;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  height: 80vh;
+  height: 100vh;
   justify-content: center;
-  padding: 30px;
+  width: 100vw;
+  // padding: 30px;
   &__header {
     width: 100%;
     h1 {

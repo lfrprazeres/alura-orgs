@@ -1,26 +1,23 @@
-import Avaliacao from './Avaliacao';
-import styles from './CardProdutor.module.scss';
+import Avaliacao from "./Avaliacao";
+import styles from "./CardProdutor.module.scss";
 
 interface Props {
   foto: string;
   avaliacao: number;
   distancia: number;
-  nome: string,
-  id: string,
-  mudarAvaliacao: (idProdutor: string, novaAvaliacao: number) => void
+  nome: string;
+  id: string;
+  mudarAvaliacao: (idProdutor: string, novaAvaliacao: number) => void;
 }
 
-export default function CardProdutor(
-  {
-    foto,
-    avaliacao,
-    distancia,
-    nome,
-    id,
-    mudarAvaliacao
-  }: Props
-) {
-
+export default function CardProdutor({
+  foto,
+  avaliacao,
+  distancia,
+  nome,
+  id,
+  mudarAvaliacao,
+}: Props) {
   return (
     <div className={styles.card}>
       <div className={styles.card__imagem}>
@@ -38,5 +35,5 @@ export default function CardProdutor(
         Distância: {distancia / 1000} km
       </div>
     </div>
-  )
+  );
 }

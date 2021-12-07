@@ -6,15 +6,15 @@
   gap: 18px;
   height: 42px;
   justify-content: space-between;
+  width: 400px;
   padding: 0 15px;
-  width: 100%;
   input {
     border: none;
     flex: 1;
     font-size: 18px;
     outline: none;
     &::placeholder {
-      color: #C7C7C7;
+      color: #c7c7c7;
     }
   }
 }
